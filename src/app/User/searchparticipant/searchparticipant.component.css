@@ -1,0 +1,143 @@
+/* Base Styles */
+.heading {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.container {
+    --box-per-row: 2;
+    --gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: var(--gap);
+    padding: 40px 20px 0 20px;
+    width: auto;
+    overflow-y: auto;
+    margin: 20px auto;
+}
+
+.mat-card {
+    position: relative;
+    box-shadow: 5px 6px 7px 1px #afadad;
+    border-radius: 20px;
+    min-width: 95%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    left: 30px;
+}
+
+.mat-card-header {
+    font-size: 22px;
+}
+
+.mat-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mat-card-content {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Table Styles */
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.events-table th,
+.events-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.events-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.events-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.events-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 26px;
+        padding-left: 30px;
+    }
+    .search-bar {
+        width: 75%;
+        margin-left: 25px;
+        margin-top: 18px;
+    }
+    .search-bar input[type="text"] {
+        width: calc(100% - 70px);
+        margin-right: 0;
+    }
+    .container {
+        padding: 35px 18px;
+        max-width: 100%; /* Ensures container is centered */
+        justify-content: center;
+    }
+    .mat-card {
+        left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .mat-card-header {
+        font-size: 20px;
+    }
+    .mat-card-title {
+        font-size: 22px;
+    }
+    .mat-card-content p {
+        font-size: 18px;
+    }
+    .event-name {
+        font-size: 18px;
+    }
+    .bold-text {
+        font-size: 16px;
+    }
+    .event-date,
+    .event-location,
+    .event-organizer {
+        font-size: 16px;
+    }
+}

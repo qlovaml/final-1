@@ -1,0 +1,124 @@
+body {
+  background-color: aliceblue;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* Align container to the right */
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  margin: 20px 70px 20px 40px; /* Adjust margin to create space */
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.container form img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container img {
+  left: 50%; 
+  width: 100%;
+  height: auto;
+}
+
+
+.container.left-container {
+  height: 730px;
+  width: 1100px; /* Adjust width as needed */
+  margin: 20px 70px 20px 40px; /* Adjust margin to create space */
+}
+
+
+.container img.logo {
+  width: 180px;
+  height: auto;
+}
+.title{ 
+  margin-right: 900px;
+
+}
+
+h2, h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+textarea, input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea:focus, input[type="file"]:focus {
+  border-color: #4070f4;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4070f4;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3057d1;
+}
+
+button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  margin-top: 10px;
+  background-color: #4070f4;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #3057d1;
+}
+
+.form-control {
+  height: 250px;
+}

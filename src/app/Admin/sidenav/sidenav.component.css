@@ -1,0 +1,149 @@
+.mat-sidenav-container {
+  height: 100vh;
+}
+
+mat-sidenav-content {
+  overflow-y: auto;
+  background-color: #e4e9f7;
+  position: relative;
+}
+
+.mat-sidenav-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('/assets/images/logo/CAPMS.png');
+  background-size: 50% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.mat-sidenav {
+  background-color: whitesmoke;
+  width: 300px;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.mat-mdc-list-base {
+  display: block;
+}
+
+.side-toggle {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: -10px;
+}
+
+.datetime-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0.5rem;
+}
+
+.datetime-container i {
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+}
+
+.mat-sidenav-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.side-nav-content {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0%;
+}
+
+.nav-list-item {
+  color: #fff;
+  min-height: fit-content;
+  width: auto;
+  display: flex;
+  align-items: center;
+  transition: 0.2s linear;
+}
+
+.nav-list-item:hover{
+  background-color: #4070f4;
+  border-radius: 8px;
+  margin: 0 5px;
+}
+
+.nav-list-item i {
+  font-size: 1.3rem;
+  width: 30px;
+  height: 25px;
+  margin: 0 10px 0 5px;
+  text-align: center;
+}
+
+.nav-list-item span {
+  margin-left: 10px;
+  width: 170px;
+  text-transform: capitalize;
+}
+
+.hr {
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  margin: 0 15% 0 7%;
+}
+
+.logout-container {
+  position: absolute;
+  padding-bottom: 0.4rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.selected {
+  background-color: #4070f4;
+  border-radius: 8px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  mat-sidenav {
+    max-width: 240px; /* Adjust the max-width as needed */
+    min-width: 0;
+  } 
+  .mat-sidenav.mat-drawer-side {
+    width: 100%;
+  }
+.nav-list-item span {
+  margin-left: 5px;
+  text-transform: capitalize;
+}
+  mat-card{
+    width: 80px !important;
+  }
+  .datetime-container i {
+    font-size: 1rem; 
+    margin-right: 0.5rem;
+  }
+  .datetime-container span {
+    font-size: 1rem; 
+  }
+  .mat-toolbar{
+    padding: 15px 0px 15px 15px;
+  }
+}

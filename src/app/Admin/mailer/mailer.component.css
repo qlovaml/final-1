@@ -1,0 +1,90 @@
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 6px 7px 1px #afadad;
+    opacity: 0.94;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], textarea,
+input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.mat-field-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mat-field-container p{
+  margin-left: 20px;
+}
+
+.mat-form-field {
+  flex: 1;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 5px 6px 7px 1px #afadad;
+  width: 48%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.qrcode-container {
+  position: relative;
+}
+
+.qrcode-container button {
+  position: absolute;
+  top: 55px;
+  left: 150px;
+  padding: 8px;
+  background-color: #4caf50; /* Change to green */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 2px 3px 4px 1px #afadad;
+}
+
+.qrcode-container button:hover {
+  background-color: #388e3c; /* Darker shade of green on hover */
+}

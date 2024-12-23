@@ -1,0 +1,37 @@
+<body>
+  <div class="container left-container">
+    <h4 class="title">Previously Submitted:</h4>
+    <img [src]="getImageUrl()" alt="Proof of Attendance" class="img-fluid" loading="eager" *ngIf="submittedData.attendance_proof">
+    
+    <!-- Placeholder content (if needed) -->
+  </div>
+
+  <div class="container">
+    <img src="/assets/images/CEPAlogo2-removebg-preview.png" alt="CEPA Logo" class="logo">
+    <h2>Submit Feedback for</h2>
+    <h3>{{ eventName }}</h3>
+    <form [formGroup]="form" (submit)="onSubmit()">
+      <div class="form-group">
+        <label for="feedback">Feedback / Reflection</label>
+        <textarea formControlName="feedback" class="form-control" placeholder="Enter your feedback"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="attendanceProof">Proof of Attendance (Image)</label>
+        <input #fileInput type="file" formControlName="attendanceProof" class="form-control-file">
+      </div>
+      
+      <ng-container *ngIf="submittedData && submittedData.attendance_proof">
+        <div>
+          <p><strong>Proof of Attendance:</strong></p>
+          
+          <p><strong>Status:</strong> {{ submittedData.status }}</p>
+          <p><strong>Message:</strong> {{ submittedData.messsage }}</p>
+        </div>
+      </ng-container>
+      
+      
+      <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Submit</button>
+      <button type="button" class="btn btn-secondary" (click)="goBack()">Back</button>
+    </form>
+  </div>
+</body>

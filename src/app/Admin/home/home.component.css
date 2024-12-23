@@ -1,0 +1,206 @@
+/* General Styling */
+#barChart, #lineChart, #monthlyReportChart {
+  width: 1000px;
+  display: block;
+  margin: 25px auto;
+}
+
+/* Button Styling */
+.button {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Heading Styling */
+.heading {
+  padding: 20px 40px 7px 40px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #343a40;
+}
+
+hr {
+  margin: 0 40px;
+  border: none;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: center;
+}
+
+.box-title, .rectangle-title, .monthly-report-title {
+  margin: 0;
+}
+
+.box-title {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.box, .square1, .t-container, .square2 {
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 5px 6px 7px 1px #afadad;
+  margin: 20px;
+}
+
+.box {
+  width: 350px;
+  height: 120px;
+}
+
+.number, .number1 {
+  font-weight: 1000;
+  font-size: 35px;
+}
+
+/* First Box */
+.t-container {
+  width: 92%;
+  margin: 25px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.centered-item {
+  margin: 0 40px;
+}
+
+.rectangle-title {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.rectangle-title1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.number {
+  font-weight: 1000;
+  font-size: 1.5rem;
+}
+
+.square1, .square2 {
+  width: 1500px;
+  height: 400px;
+  margin: 15px auto;
+}
+
+.b-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Monthly Report Section */
+.monthly-report-container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.monthly-report-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.monthly-report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.monthly-report-table th, .monthly-report-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.monthly-report-table th {
+  background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+  .box, .square1, .square2, .t-container {
+    width: 90%;
+    margin: 10px 5%;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .monthly-report-container{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0 0 0;
+  }
+
+  .box {
+    height: auto;
+  }
+
+  .number, .number1 {
+    font-size: 30px;
+  }
+
+  .rectangle-title, .box-title {
+    font-size: 1.1rem;
+  }
+
+  .rectangle-title1 {
+    font-size: 1.5rem;
+  }
+
+  .heading {
+    font-size: 24px;
+    padding: 10px 20px 5px 20px;
+  }
+
+  hr {
+    margin: 0 20px;
+  }
+
+  .horizontal-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .centered-item {
+    margin: 10px 0;
+  }
+
+  #barChart, #lineChart, #monthlyReportChart {
+    width: 850px;
+    display: block;
+    margin: 25px auto;
+  }
+}

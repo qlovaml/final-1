@@ -1,0 +1,96 @@
+.container1 {
+    height: 80vh; /* Fixed height of 80% of viewport height */
+    padding: 12px 14px 0 12px; /* Padding adjustment */
+    border-radius: 20px; /* Rounded corners */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds fixed height */
+}
+
+header {
+    width: auto;
+    padding: 1.5em;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    background-color: #e4e9f7;
+    box-shadow: 8px 5px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    border-radius: 10px;
+    background-image: url('/assets/images/CEPAlogo2-removebg-preview.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 50px) calc(50% - 13px); 
+    border: solid 1px #00000088;
+    margin-bottom: 20px;
+}
+
+.event-name {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Register, .Register_Event {
+    height: 50px;
+    width: 150px;
+    background-color: #007bff;
+    box-shadow: 5px 6px 7px 1px #afadad;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    margin: 10px;
+    float: right;
+    margin-top: 10px;
+}
+
+.Register:hover, .Register_Event:hover {
+    background-color: #0056b3;
+}
+
+.description {
+    margin: 20px;
+}
+
+.qrcode {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.registrant-container, .attendees-container {
+    max-height: 300px; /* Adjusted fixed height for containers */
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 690px) {
+    header {
+        width: auto;
+        padding: 1em;
+        background-size: 250px;
+        background-position: calc(100% - 11px) calc(50% - 6px); 
+        background-size: 100px;
+        margin-bottom: 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .event-name {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .Register, .Register_Event {
+        width: 120px;
+        margin: 5px;
+    }
+
+    .description {
+        margin: 10px;
+    }
+
+    .qrcode {
+        margin: auto;
+        width: 80%;
+    }
+}

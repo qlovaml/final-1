@@ -1,0 +1,25 @@
+<body>
+    <h1 class="heading">Event Management <i class="fa-solid fa-calendar-days"></i></h1>
+    <hr>
+    <button class="addevent" (click)="openDialog()">Add Event</button>
+  
+    <!-- Putboxes -->
+    <div class="container">
+      <mat-card *ngFor="let event of events; let i = index" class="mat-card" [ngClass]="{ 'even': i % 2 === 0, 'odd': i % 2 !== 0 }">
+        <div class="archived-label" [ngClass]="{ 'archived-yes': event.archived, 'archived-no': !event.archived }">{{ event.archived ? '' : '' }}</div>
+        <mat-card-header>
+          <mat-card-title class="event-name">{{ event.event_name }}</mat-card-title>
+        </mat-card-header>
+        <hr>
+        <mat-card-content>
+          <p><strong>Event Date:</strong> {{ event.event_date }}</p>
+          <p><strong>Location:</strong> {{ event.event_location }}</p>
+          <p><strong>Organizer:</strong> {{ event.organizer }}</p>
+        </mat-card-content>
+        <mat-card-actions class="register1">
+          <button mat-button color="primary" (click)="openEventDetailsDialog(event)" class="button">Enter</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </body>
+  

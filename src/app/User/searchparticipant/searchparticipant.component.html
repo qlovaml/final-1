@@ -1,0 +1,35 @@
+<body>
+    <h1 class="heading">Search Participant <i class="fas fa-search"></i></h1>
+    <hr style="margin-left:25px;">
+    <div class="search-bar">
+        <input type="text" placeholder="Search..." [(ngModel)]="searchQuery" (input)="searchParticipant()" />
+    </div>
+    <div class="container" *ngIf="participants.length > 0">
+        <div *ngFor="let participant of participants" class="mat-card">
+            <div class="mat-card-header">
+                <div class="mat-card-title participant-name">{{ participant.first_name }} {{ participant.last_name }}</div>
+            </div>
+            <hr>
+            <div class="mat-card-content">
+                <table class="events-table">
+                    <thead>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Organizer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let event of participant.events">
+                            <td>{{ event.event_name }}</td>
+                            <td>{{ event.event_date | date }}</td>
+                            <td>{{ event.event_location }}</td>
+                            <td>{{ event.organizer }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
